@@ -1,0 +1,408 @@
+/* start works */
+li,a,button{
+  font-weight: 500;
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+
+}
+.nav_links{
+  list-style: none;
+}
+.nav_links li{
+  display: inline-block;
+  padding: 0px 20px;
+font-size:larger;
+}
+.nav_links li a{
+ transition: all 0.3s ease 0s; 
+}
+.nav_links li a:hover{
+  color: #0088a9;
+}
+button{
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  transition: all 0.3s ease 0s;
+}
+
+.works h1{
+    text-transform: capitalize;
+    color: black;
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+@media(max-width:480px){
+  .works h1{
+    font-size: 20px;
+  } 
+}
+
+@media(min-width:480px){
+  .works h1{
+    font-size: 40px;
+  } 
+}
+
+@media(min-width:768px){
+  .works h1{
+    font-size: 60px;
+  } 
+}
+
+.works p{
+    color: #888;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+@media(max-width:480px){
+  .works p{
+    font-size: 10px;
+  }
+}
+
+@media(min-width:480px){
+  .works p{
+    font-size: 14px;
+  }
+}
+
+@media(min-width:768px){
+  .works p{
+    font-size: 18px;
+  }
+}
+
+.works div{
+    width: 97%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 25px 45px;
+}
+
+@media(max-width:480px){
+  .works div{
+    grid-template-columns: auto;
+    gap: 10px 15px;
+  }
+}
+
+@media(min-width:480px){
+  .works div{
+    grid-template-columns: auto;
+    gap: 15px 25px;
+  }
+}
+
+@media(min-width:768px){
+  .works div{
+    grid-template-columns: auto auto;
+    gap: 25px 45px;
+  }
+}
+
+.works div img{
+    width: 378px;
+    height: 400px;
+    margin-left: 140px;
+}
+
+.works div img:hover{
+  transform: scale(1.1);
+  opacity: .7;
+}
+
+@media(max-width:480px){
+  .works div img{
+    width: 178px;
+    height: 200px;
+  }
+}
+
+@media(min-width:480px){
+  .works div img{
+    width: 250px;
+    height: 280px;
+  }
+}
+
+@media(min-width:768px){
+  .works div img{
+    width: 378px;
+    height: 400px;
+  }
+}
+/*end works */
+
+
+/* start products */
+.product{
+    width: 90%;
+    margin: 70px auto 100px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+@media(max-width:480px){
+  .product{
+    grid-template-columns: 50%;
+    width: 50%;
+  }
+}
+
+@media(min-width:480px){
+  .product{
+    grid-template-columns: 50%;
+    width: 70%;
+  }
+}
+
+@media(min-width:768px){
+  .product{
+    grid-template-columns: 50% 50%;
+    width: 90%;
+  }
+}
+
+.product img{
+    width: 70%;
+    padding: 20px;   
+}
+
+.product img:hover{
+  transform: scale(1.1);
+  opacity: .7;
+}
+
+@media(max-width:480px){
+  .product img{
+    width: 100%;  
+    position: relative;
+    left: 40px;
+  }
+}
+
+@media(min-width:480px){
+  .product img{
+    width: 100%;  
+    position: relative;
+    left: 100px;
+  }
+}
+
+@media(min-width:768px){
+  .product img{
+    width: 70%;  
+  }
+}
+
+.product .parent{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-content: center;
+    row-gap: 70px;
+}
+
+@media(max-width:480px){
+  .product .parent{
+    grid-template-columns: 50%;
+    margin-left: 80px;
+  }
+}
+
+@media(min-width:480px){
+  .product .parent{
+    grid-template-columns: 50%;
+    margin-left: 170px;
+  }
+}
+
+@media(min-width:768px){
+  .product .parent{
+    grid-template-columns: 50% 50%;
+  }
+}
+
+.product div i{
+    color: white;
+    font-size: 28px;
+    padding-bottom: 10px;
+}
+
+@media(max-width:480px){
+  .product div i{
+    font-size: 15px;
+  }
+}
+
+@media(min-width:480px){
+  .product div i{
+    font-size: 20px;
+  }
+}
+
+@media(min-width:768px){
+  .product div i{
+    font-size: 28px;
+  }
+}
+
+.product div p{
+    color: #888;
+    font-size: 19px;
+    line-height: 150%;
+    width: 70%;
+    padding-bottom: 10px;
+}
+
+@media(max-width:480px){
+  .product div p{
+    font-size: 9px;
+    width: 90px;
+  }
+}
+
+@media(min-width:480px){
+  .product div p{
+    font-size: 13px;
+    width: 130px;
+  }
+}
+
+@media(min-width:768px){
+  .product div p{
+    font-size: 19px;
+    width: 70%;
+  }
+}
+
+.product div a{
+    text-transform: capitalize;
+    color: white;
+}
+
+@media(max-width:480px){
+  .product div a{
+    font-size: 10px;
+  }
+}
+
+@media(min-width:480px){
+  .product div a{
+    font-size: 14px;
+  }
+}
+
+@media(min-width:768px){
+  .product div a{
+    font-size: 20px;
+  }
+}
+/*end product */
+
+
+/* start skills */
+.skills {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #EEE;
+}
+
+.skills h2 {
+  font-weight: bold;
+  font-size: 30px;
+  color: orange;
+  margin: 0 0 50px;
+  text-align: center;
+}
+
+.skills .skill-box {
+  background-color: #FFF;
+  display: flex;
+  padding: 15px;
+  margin-bottom: 15px;
+  width: 80%;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .skills .skill-box {
+    display: block;
+  }
+}
+
+.skills .skill-box .skill-name {
+  font-weight: bold;
+  width: 140px;
+  text-align: center;
+  line-height: 30px;
+}
+
+@media (max-width: 768px) {
+  .skills .skill-box .skill-name {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+.skills .skill-box .skill-progress {
+  height: 30px;
+  width: 100%;
+  background-color: #f6f6f6;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+}
+  
+.skills .skill-box .skill-progress span{
+  padding-left: 10px;
+  display: inline-block;
+  padding-top: 6px;
+}
+
+.skills .skill-box .red{
+  background-color: red;
+  width: 70%;
+}
+
+.skills .skill-box .green{
+  background-color: green;
+  width: 60%;
+}
+
+.skills .skill-box .blue{
+    background-color: blue;
+    width: 80%;
+}
+
+.skills .skill-box .pink{
+    background-color: pink;
+    width: 70%;
+}
+
+.skills .skill-box .yellow{
+    background-color: yellow;
+    width: 60%;
+}
+
+.skills .skill-box .brown{
+    background-color: brown;
+    width: 80%;
+}
+/*end skills */

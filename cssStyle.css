@@ -1,0 +1,239 @@
+body{
+	padding: 0;
+	margin: 0;
+	background-color: #f1f1f1;
+
+}
+
+li,a,button{
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+
+}
+.nav_links{
+    list-style: none;
+}
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+	font-size:larger;
+}
+.nav_links li a{
+   transition: all 0.3s ease 0s; 
+}
+.nav_links li a:hover{
+    color: #0088a9;
+}
+button{
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+}
+    
+.about-us{
+	width: 100%;
+	min-height: 100vh;
+	
+}
+  .about-us .title{
+	  width: 100%;
+	  display: flex;
+	  text-align: center;
+	  justify-content: center;
+	  font-size: 22px;
+	  color: #222;
+	  letter-spacing: 1.5px;
+	  padding: 50px 0px;
+	  text-transform: uppercase;
+  }
+  .about-us .title h1::after{
+	  content: "";
+	  height: 6px;
+	  width: 180px;
+	  border-radius: 5px;
+	  position: relative;
+	  display: block;
+	  margin: auto;
+      
+  }
+  .content{
+	  width: 85%;
+	  display: grid;
+	  grid-template-columns: repeat(2, 1fr);
+	  grid-gap: 40px;
+	  margin: 30px auto;
+	  
+	  
+  }
+  .content .paragraph{
+	  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+	  padding: 25px 25px;
+	  background-color: #eee; 
+  }
+  .content .paragraph h2{
+	  color: #222;
+	  font-size: 22px;
+	  letter-spacing: 1px;
+  }
+  .content .paragraph p{
+	  margin-top: 30px;
+	  font-size: 19px;
+	  color: #222;
+  }
+  .content .paragraph a{
+	  font-size: 20px;
+	  display: inline-block;
+	  padding: 12px 35px;
+      border-radius: 25px;
+	  color: white;
+	  border: 1px solid #252525;
+	  letter-spacing: 1.5px;
+	  margin-top: 20px;
+	  background-color: #252525;
+
+  }
+  .content .paragraph a:hover{
+	  color:#252525;
+	  background-color: white;
+  }
+  .about-us .img{
+     width: 85%;
+     margin: auto;
+  }
+  .about-us .img img{
+	  width: 85%;
+	  height: auto;
+  }
+@media screen and (max-width: 900px ){
+	.content{
+		
+		grid-template-columns: repeat(1, 1fr);
+		
+}
+     .paragraph{
+       text-align: center;
+	 }
+	}
+/* end of about us */
+
+/* start of our team */
+.our-team{
+	min-height: 100vh;
+	justify-content: center;
+	align-items: center;
+	padding-top: 60px;
+
+}
+.our-team .title{
+	text-align: center;
+	color: #222;
+    margin: 10px 0px;
+	font-size: 40px;
+	text-transform: uppercase;
+	padding-top: 40px;
+}
+.our-team .title::after{
+	content: "";
+	position: absolute;
+	width: 20%;
+	height: 2px;
+}
+.row{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 50px 0;
+   
+}
+.member{
+     flex: 1 1 250px;
+     margin: 20px;
+    text-align: center;
+    padding: 20px 10px;
+	cursor: pointer;
+	max-width: 300px;
+	transition: all 0.2s;
+}
+.member img{
+	display: block;
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+	border-radius: 50%;
+	margin: 0 auto;
+	border: 2px solid #252525 ;
+
+}
+.member:hover{
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+	transform: translateY(-20px);
+	
+}
+.our-team .row .member ul li {
+    display: inline-block;
+    color:#555;
+    font-size: 1.5rem;
+    margin: 2rem 0.5rem;
+  }
+  .member h2{
+	  font-size: 24px;
+	  margin: 15px 0;
+  }
+  /* end of our team */
+
+    /* start of our services*/
+	.services{
+		padding-top: 20px;
+	  }
+	  .services h1 {
+	  text-align: center;
+	  font-size: 40px;
+	  }
+	  .services .container {
+	  display: grid;
+	  grid-template-columns: repeat(3, 1fr);
+	  column-gap: 3rem;
+	  row-gap: 3rem;
+	  padding: 3rem 5rem;
+	  }
+	  .services .container .box {
+	  position: relative;
+	  }
+	  .services .container .box .fas {
+	  color: #252525;
+	  font-size: 1.5rem;
+	  position: absolute;
+	  left: -2.5rem;
+	  }
+	  .services .container .box p {
+	  color: slategrey;
+	  margin: 0.5rem 0;
+	  }
+	  .services a{
+		color: #252525;
+	  }
+	  @media screen and (max-width: 900px ){
+		  .services .container{
+			  
+			  grid-template-columns: repeat(2, 1fr);
+			  
+	  }
+	  @media screen and (max-width: 500px ){
+		  .services .container{
+			  
+			  grid-template-columns: repeat(1, 1fr);
+			  
+	  }
+	  
+
+	  
